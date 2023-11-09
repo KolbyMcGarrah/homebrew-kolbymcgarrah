@@ -5,11 +5,11 @@
 class Todo < Formula
   desc ""
   homepage "https://github.com/KolbyMcGarrah/cli-todo"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
-    url "https://github.com/KolbyMcGarrah/cli-todo/releases/download/v0.0.1/cli-todo_0.0.1_darwin_all.tar.gz"
-    sha256 "08e3ac151d4d93d4a1295f9a447d7f5fca5cf6941d4a072123d8df27fa47f890"
+    url "https://github.com/KolbyMcGarrah/cli-todo/releases/download/v0.0.2/cli-todo_0.0.2_darwin_all.tar.gz"
+    sha256 "904c8319dc01ec68d185ff65a241e6bf75c784ef0a12d972185936dd28e43806"
 
     def install
       bin.install "cli-todo"
@@ -18,16 +18,16 @@ class Todo < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KolbyMcGarrah/cli-todo/releases/download/v0.0.1/cli-todo_0.0.1_linux_arm64.tar.gz"
-      sha256 "18bb687bf872917323f7d3960fff9dc9444656e0863c3139560a628a98d0e278"
+      url "https://github.com/KolbyMcGarrah/cli-todo/releases/download/v0.0.2/cli-todo_0.0.2_linux_arm64.tar.gz"
+      sha256 "6b5d491aa59431506d46d90998c6ae5fda71f5fc795500ffcd884f24c91c7c83"
 
       def install
         bin.install "todo"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/KolbyMcGarrah/cli-todo/releases/download/v0.0.1/cli-todo_0.0.1_linux_amd64.tar.gz"
-      sha256 "09f791b2ef6d3ace5f74db8232411bad778a8a180970fdeaf96dfa4bbaafefc8"
+      url "https://github.com/KolbyMcGarrah/cli-todo/releases/download/v0.0.2/cli-todo_0.0.2_linux_amd64.tar.gz"
+      sha256 "f8c2d87b7d1353d3a5b3e833a5576749fdba483161cfcc2236ec999e1caa1516"
 
       def install
         bin.install "todo"
